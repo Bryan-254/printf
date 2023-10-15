@@ -32,7 +32,7 @@ int _printf(const char *format, ...)
 				}
 				else
 				{
-					m = get_func(format[x + 1]);
+					m = get_funct(format[x + 1]);
 					if (m)
 						count += m(args);
 					else
