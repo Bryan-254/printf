@@ -9,7 +9,7 @@
 int (*get_funct(char x))(va_list)
 {
 	int a = 0;
-	spec arr[] = {
+	speci arr[] = {
 		{"c", print_c},
 		{"s", print_s},
 		{"%", print_percent},
@@ -18,9 +18,9 @@ int (*get_funct(char x))(va_list)
 		{NULL, NULL}
 	};
 
-	while (arr[a].valid)
+	while (arr[a].ph)
 	{
-		if (x == arr[a].valid[0])
+		if (x == arr[a].ph[0])
 		{
 			return (arr[a].f);
 		}
