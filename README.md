@@ -1,4 +1,5 @@
-0x11. C - printf:
+0x11. C - printf:  
+
 0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life:
 mandatory.
 Write a function that produces output according to a format.
@@ -63,9 +64,9 @@ You don’t have to handle the length modifiers.
 7. The big print gives and the small print takes away:
 #advanced.
 Handle the following flag characters for non-custom conversion specifiers:
-- +
+- (+)
 - space
-- #
+- (#)
 	
 8. Sarcasm is lost in print:
 #advanced.
