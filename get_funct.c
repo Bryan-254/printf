@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * get_func - This function searches for specifier
+ * get_funct - This function searches for specifier
  * @x: The variable to the function
- * Return: function
+ * Return: The function
  */
-int (*get_func(char x))(va_list)
+
+int (*get_funct(char x))(va_list)
 {
 	int a = 0;
 	spec arr[] = {
