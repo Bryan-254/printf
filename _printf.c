@@ -13,39 +13,37 @@ int _printf(const char *format, ...)
 {
 	if (format != NULL)
 	{
-		int count = 0, i;
+		int count = 0, x;
 		int (*m)(va_list);
 		va_list args;
 
 		va_start(args, format);
-		i = 0;
+		x = 0;
 		if (format[0] == '%' && format[1] == '\0')
-		{
 			return (-1);
-		}
-		while (format != NULL && format[i] != '\0')
+		while (format != NULL && format[x] != '\0')
 		{
-			if (format[i] == '%')
+			if (format[x] == '%')
 			{
-				if (format[i + 1] == '%')
+				if (format[x + 1] == '%')
 				{
-					count += _putchar(format[i]);
-					i += 2;
+					count += _putchar(format[x]);
+					x += 2;
 				}
 				else
 				{
-					m = get_func(format[i + 1]);
+					m = get_func(format[x + 1]);
 					if (m)
 						count += m(args);
 					else
-						count = _putchar(format[i]) + _putchar(format[i + 1]);
-					i += 2;
+						count = _putchar(format[x]) + _putchar(format[x + 1]);
+					x += 2;
 				}
 			}
 			else
 			{
-				count += _putchar(format[i]);
-				i++;
+				count += _putchar(format[x]);
+				x++;
 			}
 		}
 		va_end(args);
