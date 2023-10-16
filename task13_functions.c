@@ -20,7 +20,7 @@ int print_rev(va_list args)
 	}
 	while (s[y] != '\0')
 	{
-		j++;
+		y++;
 	}
 	for (x = y - 1; x >= 0; x--)
 	{
