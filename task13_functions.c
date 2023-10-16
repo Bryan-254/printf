@@ -2,6 +2,12 @@
 #include <stdio.h>
 #include <stdarg.h>
 
+/**
+ * print_rev - This function prints a string in reverse
+ * @args: This is a string argument
+ * Return: Number of characters in the input string
+ */
+
 int print_rev(va_list args)
 {
 	int x, count = 0;
