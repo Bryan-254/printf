@@ -1,3 +1,12 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdarg.h>
+
+/**
+ * print_rev - This function prints string in reverse
+ * @args: This is a character argument
+ * Return: The reversed string
+ */
 
 int print_rev(va_list args)
 {
