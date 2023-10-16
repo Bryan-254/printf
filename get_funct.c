@@ -15,6 +15,7 @@ int (*get_funct(char x))(va_list)
 		{"%", print_percent},
 		{"d", print_d},
 		{"i", print_i},
+		{"r", print_rev},
 		{NULL, NULL}
 	};
 
