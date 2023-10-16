@@ -10,20 +10,21 @@
 
 int print_rev(va_list args)
 {
-	int x, count = 0;
-	char *s;
+	char *s = va_arg(args, char*);
+	int x;
+	int y = 0;
 
-	s = va_arg(args, char*);
-
-	while (s[count] != '\0')
+	if (s == NULL)
 	{
-		count++;
+		s = "(null)";
 	}
-
-	for (x = count - 1 ; x >= 0 ; x--)
+	while (s[y] != '\0')
 	{
-		putchar(s[x]);
+		j++;
 	}
-
-	return (count);
+	for (x = y - 1; x >= 0; x--)
+	{
+		_putchar(s[x]);
+	}
+	return (y);
 }
