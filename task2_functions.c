@@ -8,7 +8,7 @@
  * Return: total number of binary digits processed
  */
 
-int bin(va_list arg)
+int print_bin(va_list arg)
 {
 	unsigned int a;
 	int  x, b;
