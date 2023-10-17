@@ -10,9 +10,9 @@ int (*get_funct(char x))(va_list)
 {
 	int a = 0;
 	speci arr[] = {
-		{"c", print_c},
-		{"s", print_s},
-		{"%", print_percent},
+		{"c", print_ch},
+		{"s", print_st},
+		{"%", print_perc},
 		{"d", print_d},
 		{"i", print_i},
 		{"r", print_rev},
