@@ -3,48 +3,50 @@
 #include <stdarg.h>
 
 /**
- * print_d - This function prints a decimal
+ * print_deci - This function prints a decimal
  * @args: This parameter is decimal argument
  * Return: The counter
  */
 
-int print_d(va_list args)
+int print_deci(va_list args)
 {
 
-	unsigned int absolute, aux, countnum, count;
+	unsigned int abs, auxi, count, countnumb;
 	int n;
 
 	count = 0;
 	n = va_arg(args, int);
 		if (n < 0)
 		{
-			absolute = (n * -1);
+			abs = (n * -1);
 			count += _putchar('-');
 		}
 		else
-			absolute = n;
+			abs = n;
 
-	aux = absolute;
-	countnum = 1;
-	while (aux > 9)
+	auxi = abs;
+	countnumb = 1;
+
+	while (auxi > 9)
 	{
-		aux /= 10;
-		countnum *= 10;
+		auxi /= 10;
+		countnumb *= 10;
 	}
-	while (countnum >= 1)
+	while (countnumb >= 1)
 	{
-		count += _putchar(((absolute / countnum) % 10) + '0');
-		countnum /= 10;
+		count += _putchar(((abs / countnumb) % 10) + '0');
+		countnumb /= 10;
 	}
+
 	return (count);
 }
 /**
- * print_i - This function prints integer
+ * print_integ - This function prints integer
  * @args: This parameter is integer argument
  * Return: the decimal function
  */
 
-int print_i(va_list args)
+int print_integ(va_list args)
 {
-	return (print_d(args));
+	return (print_deci(args));
 }
