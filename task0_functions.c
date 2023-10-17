@@ -35,7 +35,7 @@ int print_st(va_list args)
 		s = "(null)";
 	}
 
-	while (str[a] != '\0')
+	while (s[a] != '\0')
 	{
 		_putchar(s[a]);
 		a++;
