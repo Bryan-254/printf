@@ -17,12 +17,12 @@ typedef struct specifier
 } speci;
 
 int _printf(const char *format, ...);
-int print_c(va_list args);
-int print_s(va_list args);
+int print_ch(va_list args);
+int print_st(va_list args);
 int print_d(va_list args);
 int print_i(va_list args);
 int _putchar(char c);
-int print_percent(va_list args);
+int print_perc(va_list args);
 int (*get_funct(char x))(va_list args);
 int print_rev(va_list args);
 int print_bin(va_list arg);
