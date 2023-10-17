@@ -17,6 +17,7 @@ int print_bin(int numb)
 
 	int digit = numb % 2;
 	int count = 1 + print_bin(numb / 2);
+
 	printf("%d", digit);
 
 	return (count);
