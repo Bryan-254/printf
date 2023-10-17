@@ -13,8 +13,8 @@ int (*get_funct(char x))(va_list)
 		{"c", print_ch},
 		{"s", print_st},
 		{"%", print_perc},
-		{"d", print_d},
-		{"i", print_i},
+		{"d", print_deci},
+		{"i", print_integ},
 		{"r", print_rev},
 		{"b", print_bin},
 		{NULL, NULL}
