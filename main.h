@@ -26,5 +26,6 @@ int print_perc(va_list args);
 int (*get_funct(char x))(va_list args);
 int print_rev(va_list args);
 int print_bin(va_list arg);
+int print_point(va_list args);
 
 #endif
