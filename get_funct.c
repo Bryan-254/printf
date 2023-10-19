@@ -17,7 +17,6 @@ int (*get_funct(char x))(va_list)
 		{"i", print_integ},
 		{"r", print_rev},
 		{"b", print_bin},
-		{"p", print_point},
 		{NULL, NULL}
 	};
 
